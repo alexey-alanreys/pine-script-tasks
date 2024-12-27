@@ -1,0 +1,53 @@
+.fancybox-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 21012;
+}
+
+.fancybox-outer {
+  height: auto;
+  max-width: 100%;
+  padding: 0.25rem;
+  border: var(--bs-border-width) solid var(--bs-border-color);
+  border-radius: var(--bs-border-radius);
+
+  background-color: var(--bs-body-bg);
+}
+
+.fancybox-image {
+  display: block;
+
+  height: 100%;
+  max-height: 100%;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.image {
+  cursor: zoom-in;
+}
+
+#fancybox-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: 21013;
+
+  cursor: zoom-out !important;
+}
+
+#fancybox-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 21011;
+
+  width: 100%;
+
+  background-color: rgba(0, 0, 0, 0.8);
+}
