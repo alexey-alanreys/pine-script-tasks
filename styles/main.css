@@ -2,7 +2,7 @@
 @import url(headbar.css);
 @import url(navbar.css);
 @import url(image.css);
-@import url(solution.css);
+@import url(accordion.css);
 
 html {
   overflow-y: auto;

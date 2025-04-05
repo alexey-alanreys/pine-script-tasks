@@ -1,0 +1,144 @@
+/* Добавить смену цвета "Решение" в аккордионе */
+
+.accordion {
+  display: grid;
+  border: 1px solid rgb(222, 226, 230);
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.25rem;
+  grid-row: 1;
+  width: 100%;
+  height: 60px;
+  transition: background-color 0.2s ease;
+  background-color: rgba(207, 226, 255, 0);
+  cursor: pointer;
+}
+
+.accordion-header img {
+  margin: 0;
+  width: 1.25rem;
+  height: 1.25rem;
+  transition: transform 0.3s ease;
+}
+
+.accordion input {
+  display: none;
+}
+
+.accordion-body {
+  display: grid;
+  grid-template-rows: 0fr;
+  grid-row: 2;
+  overflow: hidden;
+  min-height: 0;
+  transition: grid-template-rows 0.3s ease-out, opacity 0.2s ease-in;
+  opacity: 0;
+}
+
+.accordion-content {
+  min-height: 0;
+}
+
+.accordion input:checked + .accordion-header {
+  background-color: rgba(207, 226, 255, 1);
+}
+
+.accordion input:checked + .accordion-header img {
+  transform: rotateZ(-180deg);
+}
+
+.accordion input:checked ~ .accordion-body {
+  grid-template-rows: 1fr;
+  opacity: 1;
+}
+
+.accordion-content > a {
+  display: block;
+  margin: 1.25rem;
+}
+
+.accordion-content > a img {
+  margin: 0;
+}
+
+.code-block {
+  padding: 1rem 1.25rem 1rem 1.25rem;
+  margin: 1.25rem;
+  border-radius: var(--bs-border-radius);
+
+  background-color: var(--code-block-bg);
+}
+
+.code-block pre {
+  margin: 0;
+}
+
+.code-block code {
+  color: var(--code-color);
+}
+
+.code-block .ps-color-1 {
+  color: var(--ps-color-1);
+}
+
+.code-block .ps-color-2 {
+  color: var(--ps-color-2);
+}
+
+.code-block .ps-color-3 {
+  color: var(--ps-color-3);
+}
+
+.code-block .ps-color-4 {
+  color: var(--ps-color-4);
+}
+
+.code-block .ps-color-5 {
+  color: var(--ps-color-5);
+}
+
+.code-block .ps-color-6 {
+  color: var(--ps-color-6);
+}
+
+.code-block .ps-color-7 {
+  color: var(--ps-color-7);
+}
+
+.code-block .ps-color-8 {
+  color: var(--ps-color-8);
+}
+
+.reference-block {
+  margin: 1.25rem;
+}
+
+.docs-card {
+  margin: 1.25rem;
+  padding: 1rem 1.25rem 1rem 1.25rem;
+  border: 1px solid var(--bs-border-color);
+  border-radius: var(--bs-border-radius);
+}
+
+.docs-card-header {
+  margin-bottom: 0.25rem;
+
+  font-weight: bolder;
+}
+
+.docs-card-header::before {
+  margin-right: 0.5rem;
+
+  content: url(../images/icons/note.svg);
+}
+
+.docs-card p {
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+}
