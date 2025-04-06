@@ -1,0 +1,40 @@
+:root {
+  --bs-body-color: #212529;
+  --bs-body-color-rgb: 33, 37, 41;
+  --bs-body-bg: #fff;
+  --bs-secondary-color: rgba(33, 37, 41, 0.75);
+  --bs-link-color: #0d6efd;
+  --bs-border-color: #dee2e6;
+  --topbar-theme-icon: url(../images/icons/sun.svg);
+  --code-color: #212529;
+  --code-block-bg: #f5f5f5;
+  --ps-color-1: #f57f17;
+  --ps-color-2: #388e3c;
+  --ps-color-3: #9598a1;
+  --ps-color-4: #22ab94;
+  --ps-color-5: #2962ff;
+  --ps-color-6: #cc2929;
+  --ps-color-7: #0c3299;
+  --ps-color-8: #8e24aa;
+}
+
+[data-bs-theme='dark'] {
+  color-scheme: dark;
+  --bs-body-color: #adb5bd;
+  --bs-body-color-rgb: 173, 181, 189;
+  --bs-body-bg: #292125;
+  --bs-secondary-color: rgba(173, 181, 189, 0.75);
+  --bs-link-color: #6ea8fe;
+  --bs-border-color: #495057;
+  --topbar-theme-icon: url(../images/icons/moon.svg);
+  --code-color: #adb5bd;
+  --code-block-bg: #2b3035;
+  --ps-color-1: #f57f17;
+  --ps-color-2: #388e3c;
+  --ps-color-3: #787b86;
+  --ps-color-4: #42bda8;
+  --ps-color-5: #5b9cf6;
+  --ps-color-6: #f77c80;
+  --ps-color-7: #3179f5;
+  --ps-color-8: #ba68c8;
+}

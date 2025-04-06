@@ -1,0 +1,112 @@
+header {
+  display: grid;
+  background-color: rgb(57, 115, 76);
+  color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 12.8px 16px 0px;
+}
+
+header input {
+  display: none;
+}
+
+.header-offer-panel {
+  display: grid;
+  grid-template-rows: 0fr;
+  grid-row: 1;
+  opacity: 0;
+  overflow: hidden;
+  min-height: 0;
+  transition: grid-template-rows 0.2s ease-out, opacity 0.15s ease-in;
+}
+
+header input:checked + .header-offer-panel {
+  grid-template-rows: 1fr;
+  opacity: 1;
+}
+
+.offer-panel-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: self-start;
+  min-height: 0;
+}
+
+.header-main-panel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  grid-row: 2;
+  height: 4rem;
+}
+
+.header-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-main-panel label[for='header-toggle'] {
+  content: url(../images/icons/dollar.svg);
+  opacity: 0.8;
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+}
+
+.header-main-panel label[for='header-toggle']:hover {
+  opacity: 1;
+}
+
+.header-main-panel .vr {
+  display: inline-block;
+  opacity: 0.25;
+  width: 1px;
+  height: 2em;
+  margin: 0 1rem;
+  background-color: rgb(255, 255, 255);
+}
+
+.header-main-panel label[for='theme-toggle'] {
+  content: var(--topbar-theme-icon);
+  opacity: 0.8;
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+}
+
+.header-main-panel label[for='theme-toggle']:hover {
+  opacity: 1;
+}
+
+.offer-panel-description,
+.offer-panel-contacts {
+  margin-top: 1rem;
+}
+
+.offer-panel-contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: start;
+  text-align: right;
+}
+
+header h4 {
+  margin: 0;
+}
+
+.header-main-panel h4 {
+  font-weight: 700;
+}
+
+.offer-panel-content h4 {
+  margin-bottom: 0.5rem;
+}
+
+.offer-panel-content p {
+  margin: 0;
+}
+
+.offer-panel-content a {
+  color: #fff;
+}

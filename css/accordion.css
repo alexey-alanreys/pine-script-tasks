@@ -13,7 +13,6 @@
   align-items: center;
   padding: 1rem 1.25rem;
   grid-row: 1;
-  width: 100%;
   height: 60px;
   transition: background-color 0.2s ease;
   background-color: rgba(207, 226, 255, 0);
@@ -80,6 +79,8 @@
 }
 
 .code-block code {
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono',
+    'Courier New', monospace;
   color: var(--code-color);
 }
 
@@ -119,11 +120,15 @@
   margin: 1.25rem;
 }
 
+.reference-block ul {
+  padding-left: 2rem;
+}
+
 .docs-card {
   margin: 1.25rem;
   padding: 1rem 1.25rem 1rem 1.25rem;
   border: 1px solid var(--bs-border-color);
-  border-radius: var(--bs-border-radius);
+  border-radius: 0.375rem;
 }
 
 .docs-card-header {

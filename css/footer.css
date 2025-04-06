@@ -1,0 +1,15 @@
+footer {
+  border-top: 1px solid rgba(33, 37, 41, 0.25);
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  grid-row: 1;
+  height: 3.5rem;
+}
+
+.footer-content p {
+  margin: 0;
+  color: var(--bs-secondary-color);
+}
