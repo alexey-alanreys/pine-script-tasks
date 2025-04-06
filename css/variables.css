@@ -21,6 +21,9 @@
 
   --accordion-arrow: url(../images/icons/accordion-arrow--light.svg);
   --theme-icon: url(../images/icons/theme-icon--light.svg);
+
+  --theme-light-image-visible: flex;
+  --theme-dark-image-visible: none;
 }
 
 body:has(#theme-toggle:checked) {
@@ -46,4 +49,7 @@ body:has(#theme-toggle:checked) {
 
   --accordion-arrow: url(../images/icons/accordion-arrow--dark.svg);
   --theme-icon: url(../images/icons/theme-icon--dark.svg);
+
+  --theme-light-image-visible: none;
+  --theme-dark-image-visible: flex;
 }

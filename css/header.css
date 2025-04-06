@@ -5,10 +5,6 @@ header {
   box-shadow: rgba(0, 0, 0, 0.08) 0px 12.8px 16px 0px;
 }
 
-header input {
-  display: none;
-}
-
 .header-offer-panel {
   display: grid;
   grid-template-rows: 0fr;

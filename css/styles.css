@@ -16,6 +16,10 @@
   border-radius: 3px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   -webkit-user-drag: none;
   -khtml-user-drag: none;
@@ -35,7 +39,7 @@ body {
   color: var(--body-color);
 }
 
-#theme-toggle {
+input[type='checkbox'] {
   display: none;
 }
 
