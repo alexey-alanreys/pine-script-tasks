@@ -1,13 +1,15 @@
 :root {
-  --bs-body-color: #212529;
-  --bs-body-color-rgb: 33, 37, 41;
-  --bs-body-bg: #fff;
-  --bs-secondary-color: rgba(33, 37, 41, 0.75);
-  --bs-link-color: #0d6efd;
-  --bs-border-color: #dee2e6;
-  --topbar-theme-icon: url(../images/icons/sun.svg);
-  --code-color: #212529;
+  --accordion-opened-bg: #cfe2ff;
+  --accordion-opened-color: #052c65;
+  --body-color: #212529;
+  --body-color-rgb: 33, 37, 41;
+  --body-bg: #fff;
+  --border-color: #dee2e6;
   --code-block-bg: #f5f5f5;
+  --code-color: #212529;
+  --link-color: #0d6efd;
+  --scrollbar-thumb: #cfd6e4;
+  --secondary-color: rgba(33, 37, 41, 0.75);
   --ps-color-1: #f57f17;
   --ps-color-2: #388e3c;
   --ps-color-3: #9598a1;
@@ -16,19 +18,23 @@
   --ps-color-6: #cc2929;
   --ps-color-7: #0c3299;
   --ps-color-8: #8e24aa;
+
+  --accordion-arrow: url(../images/icons/accordion-arrow--light.svg);
+  --theme-icon: url(../images/icons/theme-icon--light.svg);
 }
 
-[data-bs-theme='dark'] {
-  color-scheme: dark;
-  --bs-body-color: #adb5bd;
-  --bs-body-color-rgb: 173, 181, 189;
-  --bs-body-bg: #292125;
-  --bs-secondary-color: rgba(173, 181, 189, 0.75);
-  --bs-link-color: #6ea8fe;
-  --bs-border-color: #495057;
-  --topbar-theme-icon: url(../images/icons/moon.svg);
-  --code-color: #adb5bd;
+body:has(#theme-toggle:checked) {
+  --accordion-opened-bg: #031633;
+  --accordion-opened-color: #6ea8fe;
+  --body-color: #adb5bd;
+  --body-color-rgb: 173, 181, 189;
+  --body-bg: #292125;
+  --border-color: #495057;
   --code-block-bg: #2b3035;
+  --code-color: #adb5bd;
+  --link-color: #6ea8fe;
+  --scrollbar-thumb: #505050;
+  --secondary-color: rgba(173, 181, 189, 0.75);
   --ps-color-1: #f57f17;
   --ps-color-2: #388e3c;
   --ps-color-3: #787b86;
@@ -37,4 +43,7 @@
   --ps-color-6: #f77c80;
   --ps-color-7: #3179f5;
   --ps-color-8: #ba68c8;
+
+  --accordion-arrow: url(../images/icons/accordion-arrow--dark.svg);
+  --theme-icon: url(../images/icons/theme-icon--dark.svg);
 }

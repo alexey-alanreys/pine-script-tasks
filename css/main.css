@@ -2,24 +2,17 @@ main {
   padding: 1.5rem 0.5rem 1rem 0.75rem;
 }
 
-#section-0 h4 {
+main #section-0 h4 {
   margin-top: 0;
 }
 
-hr {
-  margin: 0.75rem 0;
-  border: 0;
-  border-top: 1px solid;
-  opacity: 0.25;
-}
-
-h4 {
+main h4 {
   margin: 1.5rem 0 0.75rem 0;
   font-size: 1.5rem;
   font-weight: 500;
 }
 
-h5 {
+main h5 {
   margin: 0.75rem 0 0.5rem 0;
   font-size: 1.25rem;
   font-weight: 500;
@@ -45,16 +38,6 @@ main img {
   margin-bottom: 0.75rem;
 }
 
-a {
-  color: var(--bs-link-color);
-  text-decoration: none;
-}
-
-a.underline:hover,
-a.underline:focus-visible {
-  text-decoration: underline;
-}
-
-a:focus-visible {
-  outline: 0;
+main a {
+  color: var(--link-color);
 }

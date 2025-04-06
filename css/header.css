@@ -16,7 +16,7 @@ header input {
   opacity: 0;
   overflow: hidden;
   min-height: 0;
-  transition: grid-template-rows 0.2s ease-out, opacity 0.15s ease-in;
+  transition: grid-template-rows 0.2s ease-out, opacity 0.2s ease-in;
 }
 
 header input:checked + .header-offer-panel {
@@ -27,7 +27,7 @@ header input:checked + .header-offer-panel {
 .offer-panel-content {
   display: flex;
   justify-content: space-between;
-  align-items: self-start;
+  align-items: start;
   min-height: 0;
 }
 
@@ -67,7 +67,7 @@ header input:checked + .header-offer-panel {
 }
 
 .header-main-panel label[for='theme-toggle'] {
-  content: var(--topbar-theme-icon);
+  content: var(--theme-icon);
   opacity: 0.8;
   width: 1.5rem;
   height: 1.5rem;
@@ -91,16 +91,15 @@ header input:checked + .header-offer-panel {
   text-align: right;
 }
 
-header h4 {
-  margin: 0;
-}
-
 .header-main-panel h4 {
+  margin: 0;
   font-weight: 700;
 }
 
 .offer-panel-content h4 {
+  margin: 0;
   margin-bottom: 0.5rem;
+  font-weight: 500;
 }
 
 .offer-panel-content p {

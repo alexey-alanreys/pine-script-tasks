@@ -8,6 +8,8 @@ nav {
 
 nav h4 {
   margin: 0;
+  font-size: 1.5rem;
+  font-weight: 500;
 }
 
 nav ul {
@@ -24,10 +26,10 @@ nav a {
   margin: 0.125rem 0;
   padding: 0.1875rem 0.5rem;
   border-radius: 0.375rem;
-  color: var(--bs-body-color);
+  color: var(--body-color);
   text-decoration: none;
 }
 
 nav a:hover {
-  background-color: rgba(var(--bs-body-color-rgb), 0.08);
+  background-color: rgba(var(--body-color-rgb), 0.08);
 }
