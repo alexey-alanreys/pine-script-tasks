@@ -2,10 +2,20 @@
   margin: 1.25rem;
 }
 
-.reference-block p {
+.reference-block__title {
   margin-bottom: 0.25rem;
 }
 
-.reference-block ul {
+.reference-block__list {
+  margin: 0;
   padding-left: 2rem;
+}
+
+.reference-block__item {
+  margin: 0.25rem 0;
+}
+
+.reference-block__link {
+  color: var(--link-color);
+  text-decoration: none;
 }

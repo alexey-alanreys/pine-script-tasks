@@ -1,11 +1,19 @@
-header {
+.theme__toggle {
+  display: none;
+}
+
+.header {
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 12.8px 16px 0px;
   display: grid;
   background-color: rgb(57, 115, 76);
   color: #fff;
-  box-shadow: rgba(0, 0, 0, 0.08) 0px 12.8px 16px 0px;
 }
 
-.header-offer-panel {
+.header__toggle {
+  display: none;
+}
+
+.header__offer-panel {
   display: grid;
   grid-template-rows: 0fr;
   grid-row: 1;
@@ -15,19 +23,50 @@ header {
   transition: grid-template-rows 0.2s ease-out, opacity 0.2s ease-in;
 }
 
-header input:checked + .header-offer-panel {
+.header__toggle:checked ~ .header__offer-panel {
   grid-template-rows: 1fr;
   opacity: 1;
 }
 
-.offer-panel-content {
+.offer-panel {
   display: flex;
   justify-content: space-between;
   align-items: start;
   min-height: 0;
 }
 
-.header-main-panel {
+.offer-panel__description {
+  margin-top: 1rem;
+}
+
+.offer-panel__title {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.offer-panel__text {
+  margin: 0;
+}
+
+.offer-panel__contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: end;
+  margin-top: 1rem;
+  text-align: right;
+}
+
+.offer-panel__link {
+  color: #fff;
+}
+
+.offer-panel__link:hover {
+  text-decoration: underline;
+}
+
+.header__main-panel {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -35,25 +74,36 @@ header input:checked + .header-offer-panel {
   height: 4rem;
 }
 
-.header-controls {
+.header__title {
+  margin: 0;
+  font-weight: 700;
+}
+
+.header__controls {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.header-main-panel label[for='header-toggle'] {
-  content: url(../images/icons/dollar.svg);
+.header__label {
+  -webkit-tap-highlight-color: transparent;
+  -moz-tap-highlight-color: transparent;
+  -ms-tap-highlight-color: transparent;
   opacity: 0.8;
   width: 1.5rem;
   height: 1.5rem;
   cursor: pointer;
 }
 
-.header-main-panel label[for='header-toggle']:hover {
+.header__label--toggle {
+  content: url(../images/icons/dollar.svg);
+}
+
+.header__label--toggle:hover {
   opacity: 1;
 }
 
-.header-main-panel .vr {
+.header__divider {
   display: inline-block;
   opacity: 0.25;
   width: 1px;
@@ -62,46 +112,10 @@ header input:checked + .header-offer-panel {
   background-color: rgb(255, 255, 255);
 }
 
-.header-main-panel label[for='theme-toggle'] {
+.header__label--theme {
   content: var(--theme-icon);
-  opacity: 0.8;
-  width: 1.5rem;
-  height: 1.5rem;
-  cursor: pointer;
 }
 
-.header-main-panel label[for='theme-toggle']:hover {
+.header__label--theme:hover {
   opacity: 1;
-}
-
-.offer-panel-description,
-.offer-panel-contacts {
-  margin-top: 1rem;
-}
-
-.offer-panel-contacts {
-  display: flex;
-  flex-direction: column;
-  align-items: end;
-  justify-content: start;
-  text-align: right;
-}
-
-.header-main-panel h4 {
-  margin: 0;
-  font-weight: 700;
-}
-
-.offer-panel-content h4 {
-  margin: 0;
-  margin-bottom: 0.5rem;
-  font-weight: 500;
-}
-
-.offer-panel-content p {
-  margin: 0;
-}
-
-.offer-panel-content a {
-  color: #fff;
 }

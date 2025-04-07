@@ -1,18 +1,24 @@
-nav {
+.nav-menu {
   position: sticky;
   z-index: 1020;
   top: 0rem;
-  padding: 1.5rem 0.75rem 0 0.5rem;
   overflow: hidden;
+  padding: 1.5rem 0.75rem 0 0.5rem;
 }
 
-nav h4 {
+.nav-menu__title {
   margin: 0;
   font-size: 1.5rem;
   font-weight: 500;
 }
 
-nav ul {
+.nav-menu__divider {
+  margin: 0.75rem 0;
+  border: 0;
+  border-top: 1px solid var(--border-color);
+}
+
+.nav-menu__list {
   display: block;
   overflow-y: scroll;
   height: 21.25rem;
@@ -21,7 +27,7 @@ nav ul {
   list-style-type: none;
 }
 
-nav a {
+.nav-menu__link {
   display: inline-block;
   margin: 0.125rem 0;
   padding: 0.1875rem 0.5rem;
@@ -30,6 +36,6 @@ nav a {
   text-decoration: none;
 }
 
-nav a:hover {
+.nav-menu__link:hover {
   background-color: rgba(var(--body-color-rgb), 0.08);
 }

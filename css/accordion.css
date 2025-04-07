@@ -5,6 +5,10 @@
   font-size: 1rem;
 }
 
+.accordion__toggle {
+  display: none;
+}
+
 .accordion__header {
   display: flex;
   justify-content: space-between;
@@ -21,6 +25,9 @@
 
 .accordion__toggle:checked ~ .accordion__header {
   background-color: var(--accordion-opened-bg);
+}
+
+.accordion__toggle:checked ~ .accordion__header > .accordion__title {
   color: var(--accordion-opened-color);
 }
 

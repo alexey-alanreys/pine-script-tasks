@@ -1,0 +1,34 @@
+.training {
+  padding: 1.5rem 0.5rem 1rem 0.75rem;
+}
+
+.training__section:first-child > .training__title {
+  margin-top: 0;
+}
+
+.training__title {
+  margin: 1.5rem 0 0.75rem 0;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.training__subtitle {
+  margin: 0.75rem 0 0.5rem 0;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.training__text {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.training__list {
+  padding-left: 2rem;
+  margin: 0;
+}
+
+.training__item {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}

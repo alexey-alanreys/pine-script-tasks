@@ -1,43 +1,42 @@
-main {
-  padding: 1.5rem 0.5rem 1rem 0.75rem;
+@import url(variables.css);
+@import url(layout.css);
+@import url(header.css);
+@import url(nav-menu.css);
+@import url(training.css);
+@import url(image.css);
+@import url(accordion.css);
+@import url(code-block.css);
+@import url(reference-block.css);
+@import url(docs-card.css);
+@import url(footer.css);
+
+* {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  box-sizing: border-box;
 }
 
-main #section-0 h4 {
-  margin-top: 0;
+html {
+  scroll-behavior: smooth;
 }
 
-main h4 {
-  margin: 1.5rem 0 0.75rem 0;
-  font-size: 1.5rem;
-  font-weight: 500;
-}
-
-main h5 {
-  margin: 0.75rem 0 0.5rem 0;
-  font-size: 1.25rem;
-  font-weight: 500;
-}
-
-main p {
-  margin-top: 0;
-  margin-bottom: 0.5rem;
-}
-
-main ul {
-  padding-left: 2rem;
+body {
   margin: 0;
+  background-color: var(--body-bg);
+  font-size: 1rem;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue';
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--body-color);
 }
 
-main li {
-  margin-top: 0.25rem;
-  margin-bottom: 0.25rem;
+::-webkit-scrollbar {
+  width: 6px;
 }
 
-main img {
-  margin-top: 0.25rem;
-  margin-bottom: 0.75rem;
-}
-
-main a {
-  color: var(--link-color);
+::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-thumb);
+  border-radius: 3px;
 }
