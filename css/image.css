@@ -1,50 +1,49 @@
-.image-container {
+.image {
+  position: relative;
   margin-bottom: 0.75rem;
   padding: 0.25rem;
   border: 1px solid var(--border-color);
   border-radius: 0.375rem;
-  position: relative;
 }
 
-.image-container label {
-  align-items: center;
+.image__label {
   justify-content: center;
-  cursor: zoom-in;
+  align-items: center;
   transition: all 0.3s ease;
+  cursor: zoom-in;
 }
 
-.image-container .image-container__image--light {
+.image__label--theme-light {
   display: var(--theme-light-image-visible);
 }
 
-.image-container .image-container__image--dark {
+.image__label--theme-dark {
   display: var(--theme-dark-image-visible);
 }
 
-.image-container img {
-  margin: 0;
+.image__toggle:checked ~ .image__label {
+  position: fixed;
+  z-index: 10000;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.8);
+  cursor: zoom-out;
+}
+
+.image__img {
   max-width: 100%;
+  margin: 0;
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-.image-container input[type='checkbox']:checked ~ label {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 10000;
-  background: rgba(0, 0, 0, 0.8);
-  cursor: zoom-out;
-  padding: 2rem;
-}
-
-.image-container input[type='checkbox']:checked ~ label img {
-  animation: smoothZoom 0.3s ease forwards;
+.image__toggle:checked ~ .image__label > .image__img {
   object-fit: contain;
+  animation: zoom 0.3s ease forwards;
 }
 
-@keyframes smoothZoom {
+@keyframes zoom {
   from {
     transform: scale(0.5);
   }

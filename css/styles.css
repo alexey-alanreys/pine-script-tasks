@@ -5,28 +5,21 @@
 @import url(main.css);
 @import url(image.css);
 @import url(accordion.css);
+@import url(code-block.css);
+@import url(reference-block.css);
+@import url(docs-card.css);
 @import url(footer.css);
-
-::-webkit-scrollbar {
-  width: 6px;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: var(--scrollbar-thumb);
-  border-radius: 3px;
-}
-
-html {
-  scroll-behavior: smooth;
-}
 
 * {
   -webkit-user-drag: none;
   -khtml-user-drag: none;
   -moz-user-drag: none;
   -o-user-drag: none;
-  user-select: none;
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -39,7 +32,7 @@ body {
   color: var(--body-color);
 }
 
-input[type='checkbox'] {
+input {
   display: none;
 }
 
@@ -51,4 +44,13 @@ hr {
 
 a {
   text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-thumb);
+  border-radius: 3px;
 }

@@ -1,0 +1,11 @@
+.reference-block {
+  margin: 1.25rem;
+}
+
+.reference-block p {
+  margin-bottom: 0.25rem;
+}
+
+.reference-block ul {
+  padding-left: 2rem;
+}
