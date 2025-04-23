@@ -95,12 +95,13 @@
   cursor: pointer;
 }
 
-.header__label--toggle {
-  content: url(../images/icons/dollar.svg);
-}
-
 .header__label--toggle:hover {
   opacity: 1;
+}
+
+.header__icon {
+  width: 100%;
+  height: 100%;
 }
 
 .header__divider {
@@ -112,10 +113,14 @@
   background-color: rgb(255, 255, 255);
 }
 
-.header__label--theme {
-  content: var(--theme-icon);
-}
-
 .header__label--theme:hover {
   opacity: 1;
+}
+
+.header__theme-icon--light {
+  display: var(--icon-label-display-light);
+}
+
+.header__theme-icon--dark {
+  display: var(--icon-label-display-dark);
 }

@@ -18,10 +18,9 @@
   --ps-color-6: #cc2929;
   --ps-color-7: #0c3299;
   --ps-color-8: #8e24aa;
-
   --accordion-arrow: url(../images/icons/accordion-arrow--light.svg);
-  --theme-icon: url(../images/icons/theme-icon--light.svg);
-
+  --icon-label-display-light: block;
+  --icon-label-display-dark: none;
   --image-placeholder-display-light: block;
   --image-placeholder-display-dark: none;
   --image-label-display-light: flex;
@@ -48,10 +47,9 @@ body:has(.theme__toggle:checked) {
   --ps-color-6: #f77c80;
   --ps-color-7: #3179f5;
   --ps-color-8: #ba68c8;
-
   --accordion-arrow: url(../images/icons/accordion-arrow--dark.svg);
-  --theme-icon: url(../images/icons/theme-icon--dark.svg);
-
+  --icon-label-display-light: none;
+  --icon-label-display-dark: block;
   --image-placeholder-display-light: none;
   --image-placeholder-display-dark: block;
   --image-label-display-light: none;
