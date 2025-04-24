@@ -60,6 +60,7 @@
 
 .offer-panel__link {
   color: #fff;
+  text-decoration: none;
 }
 
 .offer-panel__link:hover {
