@@ -12,4 +12,4 @@ Click the badge above to access the task collection online.
 ---
 
 **License:** MIT  
-**Author:** [Albert Alanreys](https://github.com/albert-alanreys)
+**Author:** [Albert Alan-Reys](https://github.com/albert-alanreys)
